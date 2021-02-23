@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  color: #dbdbdb;
+}
+
+#buttonPindahPosFix {
+  position: fixed;
+  top: 500000px;
+}
+
+#buttonPindahDisFlex {
+  position: fixed;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#buttonPindahDisFlex div {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 2vw;
+  letter-spacing: 2px;
+  border: #282828;
+  background-color: #282828;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+  background-color: #424242;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1vw;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+.content h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 23vh;
+  font-size: 8vh;
+}
+
+.content h1 .enter-tidak {
+  display: block;
+}
+
+.content p {
+  text-align: center;
+  margin-bottom: 7vh;
+  font-size: 3vw;
+}
+
+.content .time-box button {
+  color: black;
+}
+
+.content .box {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 1vh;
+}
+
+.content .box .box-one, .content .box .box-two, .content .box .box-three, .content .box .box-four {
+  width: 11vw;
+  height: 11vw;
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .box .box-one h1, .content .box .box-two h1, .content .box .box-three h1, .content .box .box-four h1 {
+  margin: 0;
+  font-size: 5vw;
+  letter-spacing: 0;
+}
+
+.content .box .box-one-text, .content .box .box-two-text, .content .box .box-three-text, .content .box .box-four-text {
+  width: 11vw;
+  height: 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.content .box .box-one-text h1, .content .box .box-two-text h1, .content .box .box-three-text h1, .content .box .box-four-text h1 {
+  margin: 0;
+  font-size: 1.5vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.3vw;
+}
+
+.background {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  background-color: #424242;
+  width: 100%;
+  height: 100vh;
+}
+
+.background .box-bg-one {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.background .box-bg-one div {
+  width: 400px;
+  height: 320px;
+  background-color: rgba(166, 164, 164, 0.22);
+  border-radius: 0 0 76px 0;
+}
+
+.background .box-bg-two {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.background .box-bg-two div {
+  width: 400px;
+  height: 320px;
+  background-color: rgba(166, 164, 164, 0.22);
+  border-radius: 76px 0 0 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  #buttonPindahDisFlex {
+    position: fixed;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #buttonPindahDisFlex div {
+    font-size: 3vw;
+  }
+  .background .box-bg-one div {
+    width: 45%;
+    height: 35vh;
+  }
+  .background .box-bg-two div {
+    width: 34%;
+    height: 44vh;
+  }
+  .content p {
+    font-size: 4vw;
+  }
+  .content .box {
+    width: 80%;
+  }
+  .content .box .box-one, .content .box .box-two, .content .box .box-three, .content .box .box-four {
+    width: 11vh;
+    height: 11vh;
+  }
+  .content .box .box-one h1, .content .box .box-two h1, .content .box .box-three h1, .content .box .box-four h1 {
+    font-size: 7vh;
+  }
+  .content .box .box-one-text h1, .content .box .box-two-text h1, .content .box .box-three-text h1, .content .box .box-four-text h1 {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .background .box-bg-one div {
+    width: 58%;
+    height: 32vh;
+  }
+  .background .box-bg-two div {
+    width: 58%;
+    height: 32vh;
+  }
+  .content h1 {
+    font-size: 5vh;
+    margin-top: 10vh;
+  }
+  .content p {
+    font-size: 2.5vh;
+  }
+  .content .box {
+    width: 90%;
+  }
+  .content .box .box-one, .content .box .box-two, .content .box .box-three, .content .box .box-four {
+    width: 9vh;
+    height: 9vh;
+  }
+  .content .box .box-one h1, .content .box .box-two h1, .content .box .box-three h1, .content .box .box-four h1 {
+    font-size: 4vh;
+  }
+  .content .box .box-one-text h1, .content .box .box-two-text h1, .content .box .box-three-text h1, .content .box .box-four-text h1 {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 823px) and (orientation: landscape) {
+  .background .box-bg-one div {
+    width: 36%;
+    height: 32vh;
+  }
+  .background .box-bg-two div {
+    width: 36%;
+    height: 32vh;
+  }
+  .content h1 .enter-tidak {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=style.css.map */

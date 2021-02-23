@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    color: rgb(219, 219, 219);
+}
+
+#buttonPindahPosFix {
+    position: fixed;
+    top: 500000px;
+}
+#buttonPindahDisFlex {
+    position: fixed;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 2vw;
+        letter-spacing: 2px;
+        border: #282828;
+        background-color: #282828;
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: #424242;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1vw;
+    overflow: hidden;
+
+}
+
+// Ini nanti (batas awal)
+.content {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    h1 {
+        text-align: center;
+        font-family: 'Righteous', cursive;
+        margin-bottom: 23vh;
+        font-size: 8vh;
+
+        .enter-tidak {
+            display: block;
+        }
+    }
+    p {
+        text-align: center;
+        margin-bottom: 7vh;
+        font-size: 3vw;
+
+    }
+    .time-box button {
+        color: black;
+    }
+    .box {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1vh;
+
+        .box-one, .box-two, .box-three, .box-four {
+            width: 11vw;
+            height: 11vw;
+            background-color: #282828;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                margin: 0;
+                font-size: 5vw;
+                letter-spacing: 0;
+                 
+            }
+        }
+        .box-one-text, .box-two-text, .box-three-text, .box-four-text {
+            width: 11vw;
+            height: 11vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            h1 {
+                margin: 0;
+                font-size: 1.5vw;
+                 
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 0.3vw;
+            }
+        }
+    
+    }
+}
+// Ini nanti (batas akhir)
+.background {
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    background-color: #424242;
+    width: 100%;
+    height: 100vh;
+
+    .box-bg-one {
+        height: 50vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        div {
+            width: 400px;
+            height: 320px;
+            background-color: rgba($color: #A6A4A4, $alpha: 0.22);
+            border-radius: 0 0 76px 0;
+        }
+    }
+    .box-bg-two {
+        height: 50vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        div {
+            width: 400px;
+            height: 320px;
+            background-color: rgba($color: #A6A4A4, $alpha: 0.22);
+            border-radius: 76px 0 0 0;
+        }
+    }
+}
+
+//Tablet
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation : portrait) {
+    #buttonPindahDisFlex {
+        position: fixed;
+        bottom: 30%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        div {
+            font-size: 3vw;
+        }
+    }
+    .background {
+        .box-bg-one {
+            div {
+                width: 45%;
+                height: 35vh;
+            }
+        }
+        .box-bg-two {
+            div {
+                width: 34%;
+                height: 44vh;
+            }
+        }
+    }
+    .content {
+        p {
+            font-size: 4vw;
+        }
+        .box {
+            width: 80%;
+
+            .box-one, .box-two, .box-three, .box-four {
+                width: 11vh;
+                height: 11vh;
+
+                h1 {
+                    font-size: 7vh;
+                }
+            }
+            .box-one-text, .box-two-text, .box-three-text, .box-four-text {
+    
+                h1 {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+//Smartphone Portrait
+@media only screen and (max-width:767px) and (orientation : portrait) {
+    .background {
+        .box-bg-one {
+            div {
+                width: 58%;
+                height: 32vh;
+            }
+        }
+        .box-bg-two {
+            div {
+                width: 58%;
+                height: 32vh;
+            }
+        }
+    }
+    .content {
+        h1 {
+            font-size: 5vh;
+            margin-top: 10vh;
+        }
+        p {
+            font-size: 2.5vh;
+        }
+        .box {
+            width: 90%;
+
+            .box-one, .box-two, .box-three, .box-four {
+                width: 9vh;
+                height: 9vh;
+    
+                h1 {
+                    font-size: 4vh;
+                }
+            }
+            .box-one-text, .box-two-text, .box-three-text, .box-four-text {
+    
+                h1 {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+//Smartphone Landscape
+@media only screen and (min-width:568px) and (max-width:823px) and (orientation : landscape) {
+    .background {
+        .box-bg-one {
+            div {
+                width: 36%;
+                height: 32vh;
+            }
+        }
+        .box-bg-two {
+            div {
+                width: 36%;
+                height: 32vh;
+            }
+        }
+    }
+    .content {
+        h1 {
+            .enter-tidak {
+                display: inline;
+            }
+        }
+    }
+}
